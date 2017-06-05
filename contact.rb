@@ -1,3 +1,5 @@
+gem 'activerecord', '4.2.8'
+
 require 'active_record'
 require 'mini_record'
 
@@ -14,6 +16,10 @@ field :note, as: :text
 
 def full_name
   "#{first_name} #{last_name}"
+end
+
+def full_info
+  "#{first_name} #{last_name} #{email} #{note}"
 end
 
 
@@ -90,7 +96,12 @@ end
 #     @@contacts.delete(self)
 #   end
 
-
+#Kathleen = Contact.new("Kathleen", "McClay", "Email", "Note")
+#puts Kathleen
 
 end
-Contact.auto_upgrade!
+# Contact.auto_upgrade!
+
+at_exit do
+  ActiveRecord::Base.connection.close
+end
