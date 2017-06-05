@@ -1,12 +1,10 @@
 <div>
-  <h1><%= "There are #{@contacts.count} contacts" %></h1>
+  <h2><%= "There are #{@contacts.count} contacts" %></h2>
   <ul>
     <% @contacts.each do |contact| %>
     <li><a href="contacts/<%=contact.id%>"><%= contact.full_name%></a>
-        <p class="point"><a href="contacts/<%=contact.id%>/edit"> Edit | </a></p>
-      
-
-    </li>
+        <p class="point"><a href="contacts/<%=contact.id%>/edit"> Edit | <a href="contacts/<%=contact.id%>/delete"> Delete </a></p>
+      </li>
     <% end %>
   </ul>
 </div>

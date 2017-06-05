@@ -24,13 +24,12 @@ nav a{
 header {
   color: white;
   background-color: black;
-padding: 0px;
+  padding: 0px;
   text-align: center;
   margin-bottom: 60px;
   font-size: 32px;
   display: block;
   border: solid black 1px
-
 }
 
 
@@ -43,49 +42,52 @@ padding: 0px;
 }*/
 
 
-
 main{
-border: solid blue 1px
+border: solid white 1px
 }
-  footer {
+
+footer {
     margin-top: 20px;
     color: white;
     background-color: black ;
     padding: 5px;
     text-align: center;
     font-size: 10px;
-
-
-
-  }
-
-  h1{
-  padding: 15px;
-    text-align: center;
-    margin-bottom: 60px
-    font-weight: bolder
-background-color: black
-        }
-  h6 {
-    color:blue;
-  padding: 5px;
-background-color: red;
-font-size: 10px
-margin-top: 5px;
-margin-left: 10px;
-border: solid 1px;
-
-
-
-
 }
 
-h5{
-  color: orange;
+h2 {
+color: grey;
+padding: 5px;
+margin-bottom: 10px;
+background-color: #FC896B;
+border: solid 1px #FC896B;
+margin-left: 10px;
+margin-right: 10px;
+        }
+
+li {
+padding: 5px;
+background-color: #00E5EE;
+font-size: 18px;
+margin-bottom: 5px;
+margin-left: 10px;
+margin-right: 10px;
+border: solid 1px;
+padding-bottom: 5px;
+font-weight: bolder;
+}
+
+h5 {
+  color: white;
 background-color: #42f4f4;
 padding: 40px;
 margin-right: 5px;
 margin-bottom: 5px;
 border: solid #42f4f4 1px;
+}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+    padding: 0;
 }
