@@ -45,7 +45,7 @@ padding: 0px;
 
 
 main{
-
+border: solid blue 1px
 }
   footer {
     margin-top: 20px;
@@ -80,7 +80,7 @@ border: solid 1px;
 
 }
 
-.h5{
+h5{
   color: orange;
 background-color: #42f4f4;
 padding: 40px;

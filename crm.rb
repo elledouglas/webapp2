@@ -4,7 +4,6 @@ require_relative './contact'
 
 
 get '/' do
-erb :index
 redirect '/contacts'
 end
 
@@ -16,9 +15,9 @@ end
 # get 'contacts/:id' do
 # 'params[:id]'
 # end
-get '/contacts/new' do
-erb :new
-end
+# get '/contacts/new' do
+# erb :new
+# end
 
  get '/contacts' do
  @contacts = Contact.all
@@ -46,7 +45,7 @@ post '/contacts' do
 end
 
 get '/contacts/:id/edit' do
-  @contact = Contact.find(params[:id].to_i)
+  @contact = Contact.find_by(id: params[:id])
   if @contact
     erb :edit_contact
   else
