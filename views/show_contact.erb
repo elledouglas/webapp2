@@ -1,2 +1,6 @@
 <header>Show_Contact Heading</header>
+<form  action="contacts/<%=@contact.id%>" method="post">
+  <input type="hidden" name="_method" value="delete">
+<button type="submit" value="delete">Delete Contact</button>
 <h1><%= @contact.first_name %></h1>
+</form>
